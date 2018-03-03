@@ -1,0 +1,29 @@
+// demo06.idl : demo06.exe 的类型库源
+
+// 此文件将由 MIDL 编译器处理以产生
+// 类型库(demo06.tlb)。
+
+[ uuid(BEDBB4C2-77C8-455B-BC08-C208EE2E06E3), version(1.0) ]
+library demo06
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Cdemo06Doc 的主调度接口
+	
+	[ uuid(8F3BF97D-D027-4C41-B65D-4C8E0084ABBB) ]
+	dispinterface Idemo06
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  Cdemo06Doc 的类信息
+	
+	[ uuid(36C486CC-5470-45F6-86A9-9FD54F4A0384) ]
+	coclass demo06
+	{
+		[default] dispinterface Idemo06;
+	};
+};
